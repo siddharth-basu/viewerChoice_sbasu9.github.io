@@ -1,8 +1,8 @@
-## Main Website for CS 424 Project 2 at UIC
-Authors: Siddarth Basu, Yang Hao, Natasha Rice, Guillermo Rojas Hernandez
+## Main Website for CS 424 Viewer Choice at UIC
+Authors: Siddarth Basu 
 
 Link to live GitHubPages site:
-* https://guillermokrh.github.io/CS-424---Project-2-Website/
+* https://siddharth-basu.github.io/viewerChoice_sbasu9.github.io/
 
 ## Website Created with: Start Bootstrap template
 
