@@ -10,9 +10,11 @@
 
     <title>Viewer Choice Presentation </title>
       
+       <img src="img/unitedStates.png">
+      <img src="img/world-map-with-continents.jpg">
+     
+ 
       
-      <img src="img/unitedStatesMap.png" style="width:500px; height:350"; > 
-       <img src="img/pastpresentfuture.jpg" style="width:500px; height:350px;"> 
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -139,43 +141,56 @@
                   <li>Design some reactive features for picking date for more information</li>
 
             </p>
+          
+          <h4><strong>Graph is dynamic for people born in a state vs people that moved to that state</strong></h4>
+          <img src="img/newDispora.png">
+          <img src="img/texasBorn.png">
+          
+          <img src="img/migrationTab.png">
+          <img src="img/texasMoved.png">
+          
+          <p>Each state's information is different based on the people that are born in the state vs people moved there to live there. And depending on what perspective you look at it from, it varies of the information presented to you. </p>
+          
+          
             
               <h2 class="section-heading">Cons</h2>
               
-              <h4><strong>Weekly Summary: March 16, 2018</strong></h4>
-            <p>Guillermo Rojas Hernandez progress: 
-                <li> Worked on getting a latest draft of the project to work on the EVL server </li>
-                <li> Researched possible data sets to integrate for the graduate portion of the project</li>
-                <li> Looked into heat map customizations for our chart </li>
+              <h4><strong>All graphs are static</strong></h4>
+            <p>Every state's information is in an ordered form which gives us a huge scrollable selection which can overwhelm the user. Each state contains similar type of information so having a single dynamic graph that changed through a selection process would have benefited in this scenerio.  
                
             </p> 
-                <p>Yang Hao progress: 
-              
-                  <li>Pick a type of delay for more info on how it changes over a 24 hours of the day and the 12 months of the year.</li>
-                  <li>Pick a destination/arrival airport from the top 50 and see how the number of flights to and from the location change over the 24 hours of the day and the 12 months of the year</li>
-            </p>
-            <p>Natasha Rice progress: 
-                <li>Figured out how to add days/months/hours that had no data so that the x- and y-axis' made sense.</li>
-                <li>Worked on getting project onto the EVL shiny server with Guillermo </li>
-                <li>Completed a map displaying the percentage of states arrival/departure in the us</li>
-                <li>Compleated picking a date and seeing data for that day.</li>
-                <li>Compleated picking a day of the week and seeing data for that day</li>
-                <li>Compleated picking an airline and showing that data by hour/month</li>
-                <li>Compleated allowing the user to compare delays over months.</li>
                 
-               </p>
-           
-             
-
+        <p></p>
+          
+          <h4><strong>What is Exactly Interactive is Unclear.</strong></h4>
+          <img src="img/hoverable.png">
+          <p>The chart above shows that we are able to hover over individual contents of the graph, however also lets the user think it is clickable and give us further information. Also notice that the information is redundant as we hovered over "Born in other states in the Midwest", the hoverable box's only useful information is the percentage, but everything else is already stated.</p>
+          
+          <p>The data points are also broken up by decades so the data is scewed to averages rather than precision. If major events happened begining of the decade, and rest of the years didnt have much activity, we cant tell where concentration of data lies. </p>
               
-              <p>Siddharth Basu progress:
-                <li>Currently working on section A: Interesting Days</li>
-                <li>Further maintaince on website by setting up final project requirements</li>
-                <li>Learned new Rstudio libraries and implemented a sub menu tab (Interesting days) </li>
-                <li>Organized the weekly progresses and sent updates </li>
-                <li>Looked deeper into the raw datafiles and data tables with Natasha.</li>
-              
-              </p>
+         <p>It lacks a proper searchability for a specific year, or even comparison to other states directly. The user must locate both charts individually, screenshot and then compare side to side. This puts too much work on the user, and by then the user is uninterested. </p>
+          
+          
+          <p></p>
+          <h4><strong>Every Dispora/Migration button says "New"</strong></h4>
+        
+          
+          <img src="img/new1.png">
+          <img src="img/new2.png">
+          <img src="img/new3.png">
+          <img src="img/new4.png">
+          
+          <p></p>
+          
+          <p>The data collected for this study goes until 2012 and above every state's graph there is "new" written. What is new exactly or is this a rushed error that they developers didnt have time to finish. It grabs the attention of the user in a useless way because there is no functionality to this. </p>
+          
+          <p></p>
+          
+          <h4><strong>Ads block off features when resizing the visualization</strong></h4>
+          <img src="img/ads.png">
+          <p></p>
+          <p>The application is well made, however if New York Times could provide a proper link to the application which stays away from News article feel. It feels less interactive and more of a article read since so much put on a single page. The ads arent too invasive but distracting and breaks focus on what matters. When we are looking at a visualization, we want to focus on that entirely, not think about tax seasons, or what other articles are available to read next. </p>
+        
               
           </div>
         </div>
@@ -204,7 +219,7 @@
                   
                   <p>Data Collecting Reasons/Biases:</p>
               <ul>
-                  <li>To measure domestic migration, the charts look at the place of birth of residents in each state of time. </li>
+                  <li>For domestic migration, the charts look at the place of birth of residents in each state of time. </li>
                   <li>The focus of this report is movement of people from their U.S. state of birth to their U.S. state of residence, foreign born residents were collapsed into a single immigrant category.</li>
                   <li>Likewise, the category “U.S. Other” was created to include residents of states born in Puerto Rico, Guam, American Samoa, the U.S. Virgin Islands, and a small number of people who in early Census years were identified as being born in Native American tribal territory.</li>
                   <li>Residents classified as U.S. born but without a specific state were allocated a state of birth proportionately based on the make-up of their state of residence for the given year.</li>
@@ -227,28 +242,36 @@
         <div class="row">
           <div class="col-md-8 mx-auto">
             <h2 class="section-heading">Interesting Findings</h2>
-              
-             <h3>Illinois</h3> 
+              <p></p>
+             <h3><Strong>Illinois vs Alabama</Strong></h3> 
               
               <p></p>
               <img src="img/illinois1.png">
               
-              <p>The current population of Illinois that is living there is 15% of population is born outside the US. This could be for a various amounts of reasons since the Union started there in the freedom. So the population was 25% which was every 1 in 4 were born outside the country.  </p>
+              <p>The population of Illinois in 1900 that was living there is 20% of population is born outside the US. This could be for a various amounts of reasons since Civil War ended in 1865 and in the north for states like Illinois was the habbitant of the first accepting non whites and immigrants for their freedom. So the population was 20% which was every 1 in 5 were born outside the country. The number for current population is 15% which infers that over time amd acceptance of other states have let them migrate to different states. </p>
+              <p></p>
+            <img src="img/alabama_born.png">
+            <p>In retrospect, Alabama is hard sourthern state, shows us that from 1900-1980, the population born outside the country is 1%. Even after the Civil war and until day now, this could infer a variaty of things. That Alabama was known not for colored people or accepting of immigrants. Or that Immigrants and colored people had their own preconceived notions of the Alabama and chose to not live there. </p>
               
-              <img src="img/illinois2.png">
+              <p>Racism or acceptance are not the only possible reasons since opportunity in urban areas were more readily available. When immigrants come to this country, they go where the jobs are located and in places they know people in their position have succeeded in the past.</p>
+              
+              <p></p>
+            <h3>_________________________________________________________________________________</h3> 
             
-              <p>The data utilized was chosen by the professor of the course, Dr. Andy Johnson.</p>
-            <p>For the application, we created bar charts and pie charts using the ggplot library once the data was processed into R Studio.</p>
-            <p>Steps to follow:</p>
-              <ul>
-                  <img src="img/menu.png" > 
-                  
-                  <li>The application is broken into 6 sub menu system</li>
-                  <li>Created the percent() and switch_hour() functions.</li>
-                  <li>Finished 5 different tables of data for the Shiny dashboard.</li>
-                  <li>Made the dashboard reactive to the hour format and the selected airport and month.</li>
-                  <li>Screenshots of the tables I created can be found in <a href="pages/yang_hao_update_03-02-18.pdf">this PDF.</a></li>
-              </ul>
+              <p></p>
+              <h4><strong>Nevada vs. California</strong></h4>
+              
+              <p></p>
+              <img src="img/NevadaBorn.png">
+              
+              <p>The population of native born Nevada in the 1900 that was living there had 25% moved to California. Nevada is mainly a desert state so looking at geographic and environmental advantages that California had to offer was enticing. Nevada and California are also border states so it makes sense that people will want to go where they can get more opportunities and close in distance. </p>
+              <p></p>
+            <img src="img/californiaBorn.png">
+            <p>In retrospect, California in the 1900, residents born in this state: 91% chose to stay here due to its opportunities and resources. However if you look at the current 2010, only 75% of residents live in California. This could be for a variety of reasons like the growth of the Tech hub in california which has caused the rise of cost of living, resources depleting like natural drinking water. </p>
+              
+              <p>Also the growth of other metropolitian areas have created more jobs and further more tech hubs like Seatle, Chicago, New York, etc. So maybe the concentration of people that want to live in California is normalizing and spreading to other states.</p>
+              
+              
           </div>
         </div>
       </div>
